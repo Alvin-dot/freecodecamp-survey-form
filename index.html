@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <div id="header-card">
+                <h1 id="title">Superpower Preference Survey</h1>
+                <p id="description">This is a survey that aims to find out which superpower is the coolest!</p>
+            </div>
+
+            <div id="form-card">
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label id="name-label" class="form-label" for="name">Name:</label>
+                        <input 
+                            type="text"
+                            name="name" 
+                            placeholder="Enter your name" 
+                            id="name" 
+                            class="form-control" 
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label id="email-label" class="form-label" for="email">Email:</label>
+                        <input 
+                            type="email" 
+                            name="email"
+                            placeholder="Enter your e-mail" 
+                            id="email" 
+                            class="form-control" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label id="number-label" class="form-label" for="age">Age (optional):</label>
+                        <input 
+                            type="number" 
+                            name="age"
+                            placeholder="Age" 
+                            id="number" 
+                            class="form-control" 
+                            min="10" 
+                            max="99"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">In which superhero universe would you like to live?</label>
+                        <select name="universe" id="dropdown" class="form-control" required>
+                            <option disabled selected value="init">Select prefered superhero universe</option>
+                            <option value="marvel">Marvel</option>
+                            <option value="dc">DC</option>
+                            <option value="dragon-ball">Dragon Ball</option>
+                            <option value="naruto">Naruto</option>
+                            <option value="one-piece">One Piece</option>
+                            <option value="my-hero-academia">My Hero Academia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Which superpower below do you think is the strongest?</label>
+                        <label>
+                            <input 
+                                name="superpower" 
+                                value="thunder" 
+                                type="radio"
+                                class="input-radio" 
+                                checked
+                            >
+                            Thunder
+                        </label>
+                        <label>
+                            <input 
+                                name="superpower" 
+                                value="fire" 
+                                type="radio"
+                                class="input-radio"
+                            >
+                            Fire
+                        </label>
+                        <label>
+                            <input 
+                                name="superpower" 
+                                value="earth" 
+                                type="radio"
+                                class="input-radio"
+                            >
+                            Earth
+                        </label>
+                        <label>
+                            <input 
+                                name="superpower" 
+                                value="wind" 
+                                type="radio"
+                                class="input-radio"
+                            >
+                            Wind
+                        </label>
+                        <label>
+                            <input 
+                                name="superpower" 
+                                value="water" 
+                                type="radio"
+                                class="input-radio"
+                            >
+                            Water
+                        </label>
+                        <label>
+                            <input 
+                                name="superpower" 
+                                value="psic" 
+                                type="radio"
+                                class="input-radio"
+                            >
+                            Psiquic
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Which superheros do you like?</label>
+                        <label>
+                            <input 
+                                name="superhero" 
+                                value="batman" 
+                                type="checkbox"
+                                class="input-checkbox"
+                            >
+                            Batman
+                        </label>
+                        <label>
+                            <input 
+                                name="superhero" 
+                                value="superman" 
+                                type="checkbox"
+                                class="input-checkbox"
+                            >
+                            Superman
+                        </label>
+                        <label>
+                            <input 
+                                name="superhero" 
+                                value="iron-man" 
+                                type="checkbox"
+                                class="input-checkbox"
+                            >
+                            Iron man
+                        </label>
+                        <label>
+                            <input 
+                                name="superhero" 
+                                value="thor" 
+                                type="checkbox"
+                                class="input-checkbox"
+                            >
+                            Thor
+                        </label>
+                        <label>
+                            <input 
+                                name="superhero" 
+                                value="cp-america" 
+                                type="checkbox"
+                                class="input-checkbox"
+                            >
+                            Captain America
+                        </label>
+                        <label>
+                            <input 
+                                name="superhero" 
+                                value="hulk" 
+                                type="checkbox"
+                                class="input-checkbox"
+                            >
+                            Hulk
+                        </label>
+                        <label>
+                            <input 
+                                name="superhero" 
+                                value="saitama" 
+                                type="checkbox"
+                                class="input-checkbox"
+                            >
+                            Saitama
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="name-label" class="form-label">Any super comments or suggestions?</label>
+                        <textarea 
+                            placeholder="Enter your comments here..." 
+                            id="textarea" 
+                            class="form-control suggestion-box"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button
+                            type="submit"
+                            id="submit"
+                            class="submit-button"
+                        >
+                        Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+
+</html>

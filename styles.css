@@ -16,7 +16,7 @@
 }
 
 body {
-    background: url(background.jpg) rgba(10, 0, 0, 0.85);
+    background: url(img/background.jpg) rgba(10, 0, 0, 0.85);
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-attachment: fixed;
